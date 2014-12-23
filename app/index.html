@@ -24,8 +24,17 @@
     <h1 class="title">Timewarp</h1>
     <h3 class="subtitle">Newsreels from <span class="datepicker">today <i class="fa fa-chevron-down"></i></span> in history</h3>
 
-    <div class="picker-dropdown hide">
+    <div class="datepicker-dropdown hide">
         <span class="notch">▲</span>
+        <div class="month">
+            <input type="text" class="datepicker-input" name="month" id="month" maxlength=2 placeholder="">
+            <label class="datepicker-label" for="month">Month</label>
+        </div>
+        <div class="day">
+            <input type="text" class="datepicker-input" name="day" id="day" maxlength=2 placeholder="">
+            <label class="datepicker-label" for="day">Day</label>
+        </div>
+        <button class="datepicker-button">Warp!</button>
     </div>
 
     <div class="container">

@@ -30,7 +30,6 @@ body {
 
             .fa-chevron-down {
                 font-size:50%;
-                height:24px;
                 position:relative;
                 top:-3px;
             }
@@ -95,13 +94,15 @@ body {
         }
     }
 
-    .picker-dropdown {
+    .datepicker-dropdown {
         width:220px;
-        height:80px;
+        height:90px;
 
         position:absolute;
         left:50%;
         margin-left:-85px;
+        margin-top:10px;
+        padding:10px;
 
         border-radius:3px;
         @include vendor-prefix("box-shadow", "0 0 6px 3px rgba(52,152,219, 0.6)");
@@ -117,8 +118,43 @@ body {
             transform: scaleX(1.75);
             text-shadow: 0 -3px 3px rgba(52,152,219, 0.8);
             margin-left:103px;
-            margin-top:-18px;
+            margin-top:-28px;
             z-index:5;
+        }
+
+        .datepicker-input {
+            height:50px;
+            font-size:40px;
+            font-weight:bold;
+            width:inherit;
+        }
+
+        .datepicker-label {
+            display:block;
+            margin-top:5px;
+            font-size:12pt;
+            width:100%;
+            text-transform:uppercase;
+            text-align:center;
+        }
+
+        .month, .day {
+            display:inline-block;
+            width:55px;
+            margin-right:10px;
+        }
+
+        .datepicker-button {
+            color:white;
+            background-color:$blue;
+            height:40px;
+            width:60px;
+            font-size:12pt;
+            font-weight:bold;
+            border-radius:3px;
+            position:relative;
+            top:-30px;
+            @extend %hand;
         }
     }
 }
