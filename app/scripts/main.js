@@ -43,3 +43,24 @@ var updatePage = function(data){
     $(".reel-title").text(data.title);
     $(".reel-description").text(data.description);
 };
+
+
+Zepto(function($){
+    $(".container").height($(".tv").height());
+    $(window).on("resize", function() {
+        window.requestAnimationFrame(function(){
+            $(".container").height($(".tv").height());
+        });
+    });
+});
+
+Zepto(function($){
+    window.setInterval(function(){
+        if($(".dots-animate").text()=="..."){
+            $(".dots-animate").text("");
+        } else {
+            $(".dots-animate").text($(".dots-animate").text()+".")
+        }
+    },500);
+
+});

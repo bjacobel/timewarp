@@ -4,6 +4,7 @@
   "dependencies": {
     "zepto": "~1.1.6",
     "moment": "~2.8.4",
-    "q": "~1.0.1"
+    "q": "~1.0.1",
+    "font-awesome": "~4.2.0"
   }
 }
