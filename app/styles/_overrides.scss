@@ -28,6 +28,10 @@ ul, ol {
     cursor:pointer;
 }
 
+.hide {
+    display:none !important;
+}
+
 a {
     text-decoration:none;
     color:$blue;

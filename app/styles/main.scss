@@ -94,4 +94,31 @@ body {
             text-align:center;
         }
     }
+
+    .picker-dropdown {
+        width:220px;
+        height:80px;
+
+        position:absolute;
+        left:50%;
+        margin-left:-85px;
+
+        border-radius:3px;
+        @include vendor-prefix("box-shadow", "0 0 6px 3px rgba(52,152,219, 0.6)");
+
+        background-color:white;
+
+        z-index:4;
+
+        .notch {
+            color:white;
+            display:inline-block;
+            position:absolute;
+            transform: scaleX(1.75);
+            text-shadow: 0 -3px 3px rgba(52,152,219, 0.8);
+            margin-left:103px;
+            margin-top:-18px;
+            z-index:5;
+        }
+    }
 }
