@@ -5,3 +5,38 @@
 @import "overrides";
 @import "grid";
 @import "responsive";
+
+
+body {
+    height:100vh;
+    width:100vw;
+
+    .container {
+        max-height:620px;
+        max-width:900px;
+        height:100vh;
+        width:100vw;
+        margin:auto;
+        display:block;
+        @extend %valign;
+
+        .tv {
+            width:100%;
+            height:100%;
+            position:absolute;
+            background-position:0% 0%;
+            background-size:contain;
+            background-repeat:no-repeat;
+            background-image:url('/images/oldtv.png');
+            z-index:2;
+        }
+
+        .reel {
+            position:absolute;
+            top:2%;
+            left:2%;
+            width:77%;
+            z-index:1;
+        }
+    }
+}
