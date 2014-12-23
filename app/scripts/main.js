@@ -1,7 +1,7 @@
 Zepto(function($){
-    var today = moment().format("M-D");
+    var today = moment().subtract(1, "days").format("MM-DD");
     getReelForDate(today).then(function(data){
-        $(".reel").attr("src", data.url);
+        updatePage(data);
     }).catch(function(err){
         console.error(err);
     });
@@ -36,4 +36,10 @@ var getReelForDate = function(today){
         }
     });
     return deferred.promise;
+};
+
+var updatePage = function(data){
+    $(".reel").attr("src", data.url);
+    $(".reel-title").text(data.title);
+    $(".reel-description").text(data.description);
 };

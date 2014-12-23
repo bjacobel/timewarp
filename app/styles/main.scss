@@ -8,8 +8,21 @@
 
 
 body {
-    height:100vh;
-    width:100vw;
+    font-family: 'PT Sans Narrow', sans-serif;
+
+    .title {
+        width:100%;
+        text-align:center;
+        text-transform:uppercase;
+        letter-spacing:5px;
+        margin-bottom:10px;
+    }
+
+    .subtitle {
+        width:100%;
+        text-align:center;
+        margin:7px;
+    }
 
     .container {
         max-height:620px;
@@ -18,7 +31,7 @@ body {
         width:100vw;
         margin:auto;
         display:block;
-        @extend %valign;
+        position:relative;
 
         .tv {
             width:100%;
@@ -37,6 +50,32 @@ body {
             left:2%;
             width:77%;
             z-index:1;
+        }
+    }
+
+    .reel-meta {
+        .reel-title {
+            width:90%;
+            margin:auto;
+            text-align:center;
+            font-weight:bold;
+            font-size:22pt;
+        }
+        .reel-description {
+            width:80%;
+            margin:20px auto;
+            text-align:justify;
+        }
+    }
+
+    .about {
+        width:90%;
+        margin:150px auto 10px auto;
+
+        .about-title {
+            font-weight:bold;
+            font-size:22pt;
+            text-align:center;
         }
     }
 }
